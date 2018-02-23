@@ -1,6 +1,14 @@
-<h1><%= t ".title" %></h1>
-<p>
-  <%= t ".body1" %>
-  <%= link_to t(".title_tut"), t(".url_tut") %>
-  <%= t ".body2" %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t ".welcome_title" %></h1>
+
+  <h2>
+    <%= t ".body1" %>
+    <%= link_to t(".title_tut"), t(".url_tut") %>
+    <%= t ".body2" %>
+  </h2>
+
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: t(".rails_logo")), t(".url_tut") %>
+<%= link_to image_tag("kitten.jpg", alt: t(".cat_logo")), t(".url_tut") %>
