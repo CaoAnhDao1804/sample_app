@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 gem "rails", "~> 5.0.6"
+gem "bootstrap-sass", "3.3.7"
 gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
