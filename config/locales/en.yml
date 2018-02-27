@@ -50,4 +50,18 @@ en:
  users:
    signup_user: "Sign up"
    body: "This will be a signup page for new users."
+concerns:
+    users_controller:
+        body: "Welcome to the Sample App!"
+shared:
+ _error_messages:
+    form: "The form contains"
+    error: "error"
+users:
+ new:
+  sign_up: "Sign up"
+  p_content: "This will be a signup page for new users."
+  create_account: "Create my account"
+  pass_confirm: "Confirmation"
+
 
