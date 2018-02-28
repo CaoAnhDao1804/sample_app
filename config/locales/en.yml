@@ -1,4 +1,8 @@
 en:
+ sessions:
+  new:
+    log_in: "Log in"
+    signup: "Sign up now"
  layouts:
    application:
     title: "Ruby on Rails Tutorial Sample App"
@@ -7,6 +11,11 @@ en:
     home: "Home"
     log_in: "Log in"
     help: "Help"
+    users: "Users"
+    profile: "Profile"
+    settings: "Settings"
+    log_out: "Logout"
+    account: "Acount"
    footer:
     the: "The"
     title_tut: "Ruby on Rails Tutorial"
@@ -47,21 +56,21 @@ en:
     body: "Contact the Ruby on Rails Tutorial about the sample app at the"
     title_contact: "contact page"
     url_contact: "http://www.railstutorial.org/contact"
- users:
-   signup_user: "Sign up"
-   body: "This will be a signup page for new users."
+users:
+  new:
+    sign_up: "Sign up now"
+    p_content: "This will be a signup page for new users."
+    create_account: "Create my account"
+    pass_confirm: "Confirmation"
 concerns:
     users_controller:
-        body: "Welcome to the Sample App!"
+        welcome_app: "Welcome to the Sample App!"
+    sessions_controller:
+        combination: "Invalid email/password combination"
 shared:
  _error_messages:
     form: "The form contains"
     error: "error"
-users:
- new:
-  sign_up: "Sign up"
-  p_content: "This will be a signup page for new users."
-  create_account: "Create my account"
-  pass_confirm: "Confirmation"
+
 
 
