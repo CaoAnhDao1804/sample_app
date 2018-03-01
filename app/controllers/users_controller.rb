@@ -4,13 +4,20 @@ class UsersController < ApplicationController
   end
 
   def show
-   @user = User.find_by id: params[:id]
+    @user = User.find_by id: params[:id]
+    if @user.persent?
+      @user
+    else
+      render :new
+    end
+
   end
 
   def creat
     @user = User.new user_params
     if @user.save
-      flash[:success] = <%= t ".body" %>
+      log_in @user
+      flash[:success] = t ".welcome_app"
       redirect_to @user
     else
       render :new
