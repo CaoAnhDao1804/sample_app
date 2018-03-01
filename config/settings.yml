@@ -3,4 +3,5 @@ user:
   email_length: 255
   password_length: 6
   avatar_size: 80
-
+sessions_controller:
+  remember_me: 1
