@@ -3,6 +3,7 @@ en:
   new:
     log_in: "Log in"
     signup: "Sign up now"
+    remember: "Remember me on this computer"
  layouts:
    application:
     title: "Ruby on Rails Tutorial Sample App"
@@ -56,21 +57,31 @@ en:
     body: "Contact the Ruby on Rails Tutorial about the sample app at the"
     title_contact: "contact page"
     url_contact: "http://www.railstutorial.org/contact"
-users:
-  new:
-    sign_up: "Sign up now"
-    p_content: "This will be a signup page for new users."
-    create_account: "Create my account"
-    pass_confirm: "Confirmation"
-concerns:
-    users_controller:
-        welcome_app: "Welcome to the Sample App!"
-    sessions_controller:
-        combination: "Invalid email/password combination"
-shared:
- _error_messages:
-    form: "The form contains"
-    error: "error"
+ users:
+   chande: "Change"
+   ysure: "You sure?"
+   new:
+     sign_up: "Sign up now"
+     p_content: "This will be a signup page for new users."
+     create_account: "Create my account"
+     pass_confirm: "Confirmation"
+   edit:
+    title_edit: "Edit user"
+    button_text: "Save changes"
+    h1: "Update your profile"
+   update:
+    pro_up: "Profile  updated"
+   index:
+    all_users: "All Users"
+   destroy:
+    user_deleted: "User deleted"
+    deleted_fail: "Delete fail"
+   logged_in_user:
+    please_login: "Please login."
+ shared:
+  error_messages:
+     form: "The form contains"
+     error: "error"
 
 
 
