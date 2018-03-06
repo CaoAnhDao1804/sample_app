@@ -3,7 +3,6 @@ en:
   account_activation:
     sample_app: "Sample app"
     welcome_app: "Welcome to the Sample App! Clock on the link below to activatr your accout:"
-    activate: "Activate"
   password_reset:
     user: "User"
     pass_re: "password_reset"
