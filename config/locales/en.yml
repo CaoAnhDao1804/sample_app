@@ -1,4 +1,23 @@
 en:
+ mailer:
+  password_reset:
+    account_activation: "Account activaion"
+    password_reset: "Password reset"
+ password_resets:
+  update:
+    not_empty: "Can't be empty"
+    reset_password: "Password has been reset."
+    expired_password: "Password reser has expired."
+  new:
+    forget: "Forgot password"
+    submit: "Submit"
+  create:
+    email_sent: "Email sent with password reset instructions"
+    mail_not_found: "Email address not found"
+  edit:
+    re_pass: "Reset password"
+    confirm: "Confirmation"
+    up_pass: "Update password"
  user_mailer:
   account_activation:
     sample_app: "Sample app"
@@ -6,8 +25,13 @@ en:
     activate: "Activate"
   password_reset:
     user: "User"
-    pass_re: "password_reset"
+    pass_re: "Password reset"
     find_me: "find me in app/views/user_mailer/password_reset.text.erb"
+    pass_re: "Password reset"
+    reset_click: "To reset your password click the link below:"
+    re_pass: "Reset password"
+    para1: "This link will expire in two hours."
+    para2: "If you did not requset your password to be reset, please ignore this email and your password will stay as it is."
   edit:
     acount_activated: "Account activated"
     invalid_link: "Invalid activation link"
@@ -18,6 +42,7 @@ en:
     log_in: "Log in"
     signup: "Sign up now"
     remember: "Remember me on this computer"
+    forgot_pass: "(forgot password)"
  layouts:
    application:
     title: "Ruby on Rails Tutorial Sample App"
