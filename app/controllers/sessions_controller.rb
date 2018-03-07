@@ -4,9 +4,15 @@ class SessionsController < ApplicationController
 
   def create
     if @user && @user.authenticate(params[:session][:password])
-      log_in @user
-      params[:session][:remember_me] == Settings.session_controller.remember_me ? remember(@user) : forget(@user)
-      redirect_back_or @user
+      if @user.activated?
+        log_in @user
+        params[:session][:remember_me] == Settings.session_controller.remember_me ? remember(@user) : forget(@user)
+        redirect_back_or @user
+      else
+        message = t ".message1"
+        flash[:warning] = message
+        redirect_to root_url
+      end
     else
       flash.now[:danger] = t ".combination"
       render :new
