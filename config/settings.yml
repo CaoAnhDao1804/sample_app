@@ -5,3 +5,5 @@ user:
   avatar_size: 80
 sessions_controller:
   remember_me: 1
+password_resets_controller:
+  time_ago: 2
